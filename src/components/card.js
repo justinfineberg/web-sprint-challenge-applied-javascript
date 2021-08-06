@@ -74,6 +74,8 @@ const cardAppender = (selector) => {
         document.querySelector(`${selector}`).appendChild(newArticle);
       })
     }
+  }).catch(err=>{
+    console.log(err);
   })
 }
 
